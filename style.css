@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #222831;
+    color: #EDEDED;
+}
+
+a {
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ion-icon {
+    font-size: 3.6rem;
+}
+
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    color: #2C3639;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+
+/* Header */
+
+.logo-name {
+    font-size: 2.4rem;
+    font-weight: 960;
+
+    letter-spacing: .1rem;
+
+    padding: 5px;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex;
+
+    align-items: center;
+}
+
+header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon ion-icon {
+    font-size: 3.6rem;
+    gap: .3rem;
+}
+
+nav ul {
+    display: none;
+}
+
+/* Header */
+
+
+/* Banner */
+
+.banner {
+    height: 50rem;
+
+    background-image: url('images/banner.jpg');
+    background-position: bottom center;
+    background-size: cover;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.ban-text {
+    background-color: rgba(0,0,0, 0.65);
+    height: 15rem;
+
+    display: flex;
+
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ban-text h1 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.ban-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Banner */
+
+
+/* Skills */
+
+
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+
+    border-bottom: 2px solid white;
+
+    margin: 4rem;
+
+    text-align: center;
+    
+    gap: 2rem;
+}
+
+.btn {
+    background: none;
+
+    border: .3rem solid whitesmoke;
+    border-radius: 1rem;
+
+    padding: 1rem 2rem;
+
+    color: white;
+
+    font-weight: 700;
+}
+
+.skill-card-info h3 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.skill-card-info h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.skill-card {
+    height: 40rem;
+    width: 90%;
+
+    background-color: rgb(128, 128, 128, 0.6);
+}
+
+.skill-card-img {
+    height: 60%;
+}
+
+.skill-card-info {
+    height: 40%;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
+
+.skill-card-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.skill-card-info button {
+    align-self: stretch;
+}
+
+.skills-wrapper {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+/* Skills */
+
+
+/* Contacts */
+
+.contact-info p {
+    font-size: 1.8rem;
+}
+
+.contacts {
+    padding: 2rem;
+    
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    align-self: center;
+}
+
+/* Contacts */
+
+
+/* Footer */
+
+.company {
+    display: flex;
+    align-items: center;
+
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.sns {
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info h4 {
+    font-size: 1.8rem;
+}
+
+/* Footer */
+
+
+.side-nav {
+    width: 550px;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.6);
+
+
+    right: -550px;
+
+    transition: all 1s;
+}
+
+.side-nav ul li a {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.side-nav ul {
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7.5rem;
+}
+
+div:target {
+    right: 0px;
+}
